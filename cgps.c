@@ -83,7 +83,7 @@ static void push_gps_data(struct gps_data_t *gpsdata)
        		(void)fprintf(stderr,"Latitude %s ",  deg_to_str(deg_type, fabs(gpsdata->fix.latitude)));
 	}
 	if (gpsdata->fix.mode >= MODE_3D && isnan(gpsdata->fix.altitude) == 0) {
-        	(void)fprintf(stderr, "Altitude %.3f ",  gpsdata->fix.altitude);
+        	(void)fprintf(stderr, "Altitude %.3f \n",  gpsdata->fix.altitude);
 	}
        // (void)printf("Speed %.2f ",  gpsdata->fix.speed);
        // (void)printf("Climb %.2f",  gpsdata->fix.climb);
